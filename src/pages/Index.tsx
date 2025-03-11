@@ -19,13 +19,13 @@ const Index = () => {
 
       <main>
         <Hero />
-        <NewsTicker />
+        {/* <NewsTicker /> */}
         <ResourcesSection />
         <AdvocacySection />
         <CommunitySection />
       </main>
 
-      <ChatButton />
+      {/* <ChatButton /> */}
       <Footer />
     </>
   );
