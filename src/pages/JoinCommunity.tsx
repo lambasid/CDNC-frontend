@@ -33,17 +33,17 @@ const JoinCommunity = () => {
     <>
       <Header />
       
-      <main className="pt-20">
-        <section className="bg-purple-light text-purple-dark py-16 px-8">
+      <main className="pt-16">
+        <section className="bg-purple-light text-purple-dark py-16 px-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-6">Join Our Caregiver Community</h1>
-            <p className="text-xl mb-8">
+            <h1 className="text-5xl font-bold mb-6">Join Our Caregiver Community</h1>
+            <p className="text-lg mb-8 max-sm:text-lg">
               Connect with others who understand your journey, share experiences, and access exclusive resources.
             </p>
             <RunningBanner 
               items={testimonials}
               className="bg-purple/20 text-purple-dark rounded-lg py-2 mt-8"
-              speed={15}
+              speed={21}
             />
           </div>
         </section>
@@ -177,7 +177,7 @@ const JoinCommunity = () => {
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-purple/5">
-                <div className="text-purple font-bold mb-2">June 15, 2023</div>
+                <div className="text-purple font-bold mb-2">June 15, 2025</div>
                 <h3 className="text-xl font-semibold mb-3">Virtual Support Group</h3>
                 <p className="text-gray-600 mb-4">Share experiences and strategies for managing caregiver stress</p>
                 <Button variant="outline" className="border-purple text-purple hover:bg-purple hover:text-white">
@@ -186,7 +186,7 @@ const JoinCommunity = () => {
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-purple/5">
-                <div className="text-purple font-bold mb-2">June 22, 2023</div>
+                <div className="text-purple font-bold mb-2">June 22, 2025</div>
                 <h3 className="text-xl font-semibold mb-3">Caregiving Workshop</h3>
                 <p className="text-gray-600 mb-4">Learn practical skills for daily caregiving challenges</p>
                 <Button variant="outline" className="border-purple text-purple hover:bg-purple hover:text-white">
@@ -195,7 +195,7 @@ const JoinCommunity = () => {
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-purple/5">
-                <div className="text-purple font-bold mb-2">July 5, 2023</div>
+                <div className="text-purple font-bold mb-2">July 5, 2025</div>
                 <h3 className="text-xl font-semibold mb-3">Self-Care Session</h3>
                 <p className="text-gray-600 mb-4">Focus on wellness practices for caregivers</p>
                 <Button variant="outline" className="border-purple text-purple hover:bg-purple hover:text-white">
