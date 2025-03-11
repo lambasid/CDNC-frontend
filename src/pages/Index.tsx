@@ -19,7 +19,6 @@ const Index = () => {
 
       <main>
         <Hero />
-        {/* <NewsTicker /> */}
         <ResourcesSection />
         <AdvocacySection />
         <CommunitySection />
