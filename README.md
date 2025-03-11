@@ -1,4 +1,4 @@
-# CDNC - Childhood Disability Advocacy Hub
+# CDNC - Childhood Disability Network Canada
 
 Welcome to CDNC!
 
