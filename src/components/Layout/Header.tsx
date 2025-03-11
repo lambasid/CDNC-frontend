@@ -6,7 +6,7 @@ export const Header = () => {
     <header className="fixed shadow-[0_1px_2px_rgba(0,0,0,0.05)] z-[100] bg-white top-0 inset-x-0">
       <div className="max-w-screen-xl h-16 flex items-center justify-between mx-auto my-0 px-4 py-0 max-md:px-5 max-md:py-0 max-sm:px-4 max-sm:py-0">
         <Link to="/" className="flex items-center gap-2 text-purple-dark text-xl font-bold">
-          <img src="/lovable-uploads/166cbe99-0d1b-4958-9f31-e0af738e5746.png" alt="CareSupport Logo" className="h-12 w-auto" />
+          <img src="/images/logo_heart.png" alt="CareSupport Logo" className="h-10 w-auto" />
           Childhood Disability Network Canada
         </Link>
 

@@ -6,6 +6,7 @@ import { ResourcesSection } from "@/components/Home/ResourcesSection";
 import { AdvocacySection } from "@/components/Home/AdvocacySection";
 import { CommunitySection } from "@/components/Home/CommunitySection";
 import { ChatButton } from "@/components/Home/ChatButton";
+import { motion } from "framer-motion";
 
 const Index = () => {
   return (
@@ -17,12 +18,16 @@ const Index = () => {
 
       <Header />
 
-      <main>
+      <motion.main
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
         <Hero />
         <ResourcesSection />
         <AdvocacySection />
         <CommunitySection />
-      </main>
+      </motion.main>
 
       {/* <ChatButton /> */}
       <Footer />
