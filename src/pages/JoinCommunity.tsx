@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Layout/Header";
 import { Footer } from "@/components/Layout/Footer";
 import { RunningBanner } from "@/components/Support/RunningBanner";
@@ -31,12 +30,13 @@ const JoinCommunity = () => {
   
   return (
     <>
+      
       <Header />
       
       <main className="pt-16">
         <section className="bg-purple-light text-purple-dark py-16 px-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Join Our Caregiver Community</h1>
+            <h1 className="text-5xl font-bold mb-6 max-sm:text-5xl">Join Our Caregiver Community</h1>
             <p className="text-lg mb-8 max-sm:text-lg">
               Connect with others who understand your journey, share experiences, and access exclusive resources.
             </p>
