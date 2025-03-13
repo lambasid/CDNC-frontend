@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="max-w-screen-xl flex gap-8 mb-8 mx-auto my-0 max-md:px-5 max-md:py-0 max-sm:flex-col max-sm:gap-8">
         <div className="w-72 max-sm:w-full">
           <h3 className="text-white text-base font-semibold mb-[17px]">
-            CareSupport
+          Childhood Disability Network Canada
           </h3>
           <p className="text-gray-400 text-base">
             Supporting caregivers through community and advocacy.
@@ -67,7 +67,7 @@ export const Footer = () => {
       </div>
 
       <div className="text-gray-400 text-base border-t-gray-700 text-center pt-8 border-t border-solid">
-        © 2025 CareSupport. All rights reserved.
+        © 2025 CDNC. All rights reserved.
       </div>
     </footer>
   );
