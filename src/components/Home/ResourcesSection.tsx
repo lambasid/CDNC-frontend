@@ -1,3 +1,5 @@
+import {TiBook, TiBookmark } from "react-icons/ti";
+
 interface ResourceCardProps {
   icon: string;
   title: string;
@@ -27,9 +29,10 @@ const ResourceCard = ({
 export const ResourcesSection = () => {
   return (
     <section className="bg-gray-50 px-20 py-16 max-sm:px-5 max-sm:py-10">
-      <h2 className="text-3xl font-bold text-center mb-[45px]">
-        Essential Resources
-      </h2>
+      
+      <h2 className="text-3xl font-bold text-center mb-[45px] flex items-center justify-center gap-4">
+              <TiBookmark className="text-purple text-3xl" /> Essential Resources
+            </h2>
       <div className="max-w-screen-xl flex gap-8 justify-center mx-auto my-0 max-md:flex-col max-md:items-center max-md:px-5 max-md:py-0">
         <ResourceCard
           icon="ti ti-file-text"

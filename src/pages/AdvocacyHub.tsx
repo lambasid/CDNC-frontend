@@ -15,7 +15,7 @@ const AdvocacyHub = () => {
         <section className="bg-purple-light py-20 px-4">
           <div className="max-w-screen-xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-purple-dark mb-6">Advocacy Hub</h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-purple-dark max-w-3xl mx-auto mb-8">
               Join our movement to advocate for better support and recognition for caregivers across the country.
               Together, we can make a difference.
             </p>
