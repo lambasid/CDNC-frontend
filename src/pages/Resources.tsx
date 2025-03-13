@@ -15,11 +15,11 @@ const Resources = () => {
         <section className="bg-purple-light py-16 px-4">
           <div className="max-w-screen-xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-purple-dark mb-6">Caregiver Resources</h1>
-            <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-purple-dark max-w-3xl mx-auto mb-8">
               Access comprehensive guides, financial assistance information, and community support to help you navigate your caregiving journey.
             </p>
             <div className="relative max-w-xl mx-auto">
-              <div className="flex items-center border-2 border-purple rounded-lg bg-white overflow-hidden">
+              <div className="flex items-center border-2 rounded-lg bg-white overflow-hidden">
                 <Search className="ml-3 h-5 w-5 text-gray-400" />
                 <input 
                   type="text" 

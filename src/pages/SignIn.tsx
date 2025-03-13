@@ -13,7 +13,7 @@ const SignIn = () => {
     e.preventDefault();
     toast({
       title: "Sign in successful",
-      description: "Welcome back to CareSupport!",
+      description: "Welcome back to CDNC!",
     });
     setEmail("");
     setPassword("");
