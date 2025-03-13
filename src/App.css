@@ -1,5 +1,4 @@
-/* General Styles */
-body {
+/* body {
   @apply bg-gray-50 text-gray-900 antialiased;
 }
 
@@ -7,7 +6,7 @@ body {
   @apply max-w-screen-xl mx-auto px-6;
 }
 
-/* Logo Styling */
+
 .logo {
   @apply h-24 p-6 transition-all;
 }
@@ -33,12 +32,12 @@ body {
   }
 }
 
-/* Card Styling */
+
 .card {
   @apply p-8 bg-white shadow-lg rounded-lg;
 }
 
-/* Documentation Text */
+
 .read-the-docs {
   @apply text-gray-500;
-}
+}  */
