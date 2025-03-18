@@ -4,19 +4,33 @@ import { Footer } from "@/components/Layout/Footer";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Sign in successful",
-      description: "Welcome back to CDNC!",
-    });
-    setEmail("");
-    setPassword("");
+    axios.post('http://localhost:3001/login', {email, password})
+    .then(result => {console.log(result)
+      if(result.data === "Success") {
+        toast({
+          title: "Sign in successful",
+          description: "Welcome back to CDNC!",
+        });
+        navigate('/')
+      } else {
+        toast({
+          title: "Sign in un-successful",
+          description: "Please try Again",
+        });
+        navigate('/sign-in')
+      }
+  })
+    .catch(err=> console.log(err))
   };
 
   return (
@@ -70,7 +84,7 @@ const SignIn = () => {
                     Remember me
                   </label>
                 </div>
-                <a href="#" className="text-sm text-purple hover:text-purple-dark">
+                <a href="sign-up" className="text-sm text-purple hover:text-purple-dark">
                   Forgot password?
                 </a>
               </div>
@@ -84,7 +98,7 @@ const SignIn = () => {
 
               <p className="text-center text-sm text-gray-600 mt-4">
                 Don't have an account?{" "}
-                <a href="#" className="text-purple hover:text-purple-dark font-medium">
+                <a href="sign-up" className="text-purple hover:text-purple-dark font-medium">
                   Create one now
                 </a>
               </p>
