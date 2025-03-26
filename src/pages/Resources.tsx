@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Layout/Header";
 import { Footer } from "@/components/Layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -12,10 +11,10 @@ const Resources = () => {
       <Header />
       <main className="flex-grow pt-16">
         {/* Hero Section */}
-        <section className="bg-purple-light py-16 px-4">
+        <section className="bg-purple-light/30 py-16 px-8">
           <div className="max-w-screen-xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-purple-dark mb-6">Caregiver Resources</h1>
-            <p className="text-lg md:text-xl text-purple-dark max-w-3xl mx-auto mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-purple-900 mb-6">Caregiver Resources</h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
               Access comprehensive guides, financial assistance information, and community support to help you navigate your caregiving journey.
             </p>
             <div className="relative max-w-xl mx-auto">
@@ -216,7 +215,7 @@ const Resources = () => {
               <div className="md:flex">
                 <div className="md:w-1/2 bg-purple-light p-8 flex items-center justify-center">
                   <div className="text-center md:text-left">
-                    <h3 className="text-2xl font-bold text-purple-dark mb-4">Caregiver's Comprehensive Handbook</h3>
+                    <h3 className="text-2xl font-bold text-purple-900 mb-4">Caregiver's Comprehensive Handbook</h3>
                     <p className="text-gray-700 mb-6">
                       Our most complete resource with over 200 pages of practical advice, checklists, and guidance for caregivers at all stages of their journey.
                     </p>
@@ -229,23 +228,23 @@ const Resources = () => {
                   <h4 className="text-xl font-semibold mb-4">What's Inside:</h4>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple mr-3 mt-0.5">1</div>
+                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple-900 mr-3 mt-0.5">1</div>
                       <span>Step-by-step guides for new caregivers</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple mr-3 mt-0.5">2</div>
+                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple-900 mr-3 mt-0.5">2</div>
                       <span>Daily care checklists and planning tools</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple mr-3 mt-0.5">3</div>
+                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple-900 mr-3 mt-0.5">3</div>
                       <span>Communication tips for difficult conversations</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple mr-3 mt-0.5">4</div>
+                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple-900 mr-3 mt-0.5">4</div>
                       <span>Self-care strategies and burnout prevention</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple mr-3 mt-0.5">5</div>
+                      <div className="h-6 w-6 rounded-full bg-purple-light flex items-center justify-center text-purple-900 mr-3 mt-0.5">5</div>
                       <span>Directory of national and local resources</span>
                     </li>
                   </ul>
@@ -258,7 +257,7 @@ const Resources = () => {
         {/* Newsletter */}
         <section className="py-16 px-4 bg-purple-light">
           <div className="max-w-screen-xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-purple-dark mb-4">Stay Updated with New Resources</h2>
+            <h2 className="text-3xl font-bold text-purple-900 mb-4">Stay Updated with New Resources</h2>
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
               Subscribe to our monthly newsletter for the latest caregiving resources, upcoming events, and support group information.
             </p>
@@ -292,7 +291,7 @@ const ResourceCard = ({ title, category, description, linkText, linkUrl }: Resou
   return (
     <Card className="hover:shadow-md transition-shadow">
       <CardHeader className="pb-2">
-        <div className="text-sm font-medium text-purple mb-1">{category}</div>
+        <div className="text-sm font-medium text-purple-900 mb-1">{category}</div>
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
@@ -303,7 +302,7 @@ const ResourceCard = ({ title, category, description, linkText, linkUrl }: Resou
       <CardFooter>
         <a 
           href={linkUrl} 
-          className="text-purple hover:text-purple-dark font-medium flex items-center"
+          className="text-purple-900 hover:text-purple-900 font-medium flex items-center"
         >
           {linkText}
           <svg 

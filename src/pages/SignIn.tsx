@@ -1,6 +1,4 @@
-
-import { Header } from "@/components/Layout/Header";
-import { Footer } from "@/components/Layout/Footer";
+import { PageLayout } from "@/components/Layout/PageLayout";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
@@ -20,16 +18,14 @@ const SignIn = () => {
   };
 
   return (
-    <>
-      <Header />
-      <main className="pt-20">
-        <section className="min-h-[calc(100vh-180px)] bg-purple-light/30 py-16 px-8">
+    <PageLayout>
+      <section className="bg-purple-light/30 py-16 px-8">
+        <div className="max-w-screen-xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Welcome Back</h1>
+          <p className="text-lg md:text-xl text-gray-600 mb-8">
+            Sign in to access your caregiver resources and community
+          </p>
           <div className="max-w-md mx-auto bg-white rounded-lg shadow-sm border border-purple/10 p-8">
-            <h1 className="text-3xl font-bold mb-6 text-purple-dark text-center">Welcome Back</h1>
-            <p className="text-gray-600 mb-8 text-center">
-              Sign in to access your caregiver resources and community
-            </p>
-
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
@@ -64,13 +60,13 @@ const SignIn = () => {
                   <input
                     id="remember"
                     type="checkbox"
-                    className="h-4 w-4 text-purple border-gray-300 rounded"
+                    className="h-4 w-4 text-purple-900 border-gray-300 rounded"
                   />
                   <label htmlFor="remember" className="ml-2 block text-sm text-gray-700">
                     Remember me
                   </label>
                 </div>
-                <a href="#" className="text-sm text-purple hover:text-purple-dark">
+                <a href="#" className="text-sm text-purple-900 hover:text-purple-900">
                   Forgot password?
                 </a>
               </div>
@@ -84,16 +80,15 @@ const SignIn = () => {
 
               <p className="text-center text-sm text-gray-600 mt-4">
                 Don't have an account?{" "}
-                <a href="#" className="text-purple hover:text-purple-dark font-medium">
+                <a href="#" className="text-purple-900 hover:text-purple-900 font-medium">
                   Create one now
                 </a>
               </p>
             </form>
           </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+        </div>
+      </section>
+    </PageLayout>
   );
 };
 

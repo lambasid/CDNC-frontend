@@ -21,11 +21,11 @@ const CommunityPost = ({
     <img src={profileImage} alt="Profile" className="w-12 h-12 rounded-full" />
     <div>
       <h3 className="text-base font-semibold mb-1 flex items-center gap-2">
-        <TiArrowUp className="text-purple text-lg" />
+        <TiArrowUp className="text-purple-900 text-lg" />
         {title}
       </h3>
       <p className="text-sm text-gray-600 mb-4 flex items-center gap-2">
-        <TiMessages className="text-gray-500 text-lg" /> Posted by {author}
+        <TiMessages className="text-purple-900 text-lg" /> Posted by {author}
       </p>
       <p className="text-base text-gray-700 mb-9">{excerpt}</p>
       <div className="flex gap-4">
@@ -46,7 +46,7 @@ export const CommunitySection = () => {
   return (
     <section className="bg-gray-50 px-20 py-16 max-sm:px-5 max-sm:py-10">
       <h2 className="text-3xl font-bold text-center mb-[45px] flex items-center justify-center gap-4">
-        <TiMessages className="text-purple text-3xl" /> Community Highlights
+        <TiMessages className="text-purple-900 text-3xl" /> Community Highlights
       </h2>
       <div className="max-w-screen-xl flex gap-8 justify-center mx-auto my-0 max-md:flex-col max-md:items-center max-md:px-5 max-md:py-0">
         <CommunityPost
