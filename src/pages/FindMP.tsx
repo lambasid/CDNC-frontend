@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Layout/Header";
 import { Footer } from "@/components/Layout/Footer";
 import { RunningBanner } from "@/components/Support/RunningBanner";
@@ -56,11 +55,11 @@ const FindMP = () => {
   return (
     <>
       <Header />
-      <main className="pt-20">
+      <main className="pt-16">
         <section className="bg-purple-light/30 py-16 px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-6 text-purple-dark">Find Your MP</h1>
-            <p className="text-xl mb-8 text-gray-600">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Find Your MP</h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8">
               Connect with your local Member of Parliament to advocate for caregiver support
             </p>
 
@@ -84,14 +83,14 @@ const FindMP = () => {
 
         <RunningBanner 
           items={successStories}
-          className="bg-purple/10 text-purple-dark py-3"
+          className="bg-purple/10 text-purple-900 py-3"
           speed={20}
         />
 
         {searchPerformed && (
           <section className="py-16 px-8">
             <div className="max-w-screen-xl mx-auto">
-              <h2 className="text-2xl font-bold mb-8 text-purple-dark">Your Representatives</h2>
+              <h2 className="text-2xl font-bold mb-8 text-purple-900">Your Representatives</h2>
               
               <div className="grid md:grid-cols-3 gap-8">
                 {mpList.map((mp, index) => (
@@ -101,7 +100,7 @@ const FindMP = () => {
                       alt={mp.name}
                       className="w-full h-48 object-cover rounded-lg mb-4"
                     />
-                    <h3 className="text-xl font-semibold mb-2 text-purple-dark">{mp.name}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-purple-900">{mp.name}</h3>
                     <p className="text-gray-600 mb-1">{mp.party}</p>
                     <p className="text-gray-600 mb-3">{mp.constituency}</p>
                     <div className="space-y-2">
@@ -115,10 +114,10 @@ const FindMP = () => {
                       </p>
                     </div>
                     <div className="mt-4 space-y-2">
-                      <Button variant="outline" className="w-full border-purple text-purple hover:bg-purple hover:text-white">
+                      <Button variant="outline" className="w-full border-purple text-purple-900 hover:bg-purple hover:text-white">
                         Contact MP
                       </Button>
-                      <Button variant="outline" className="w-full border-purple text-purple hover:bg-purple hover:text-white">
+                      <Button variant="outline" className="w-full border-purple text-purple-900 hover:bg-purple hover:text-white">
                         Schedule Meeting
                       </Button>
                     </div>

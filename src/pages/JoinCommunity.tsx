@@ -34,15 +34,15 @@ const JoinCommunity = () => {
       <Header />
       
       <main className="pt-16">
-        <section className="bg-purple-light text-purple-dark py-16 px-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6 max-sm:text-5xl">Join Our Caregiver Community</h1>
-            <p className="text-lg mb-8 max-sm:text-lg">
+        <section className="bg-purple-light/30 py-16 px-8">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Join Our Caregiver Community</h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8">
               Connect with others who understand your journey, share experiences, and access exclusive resources.
             </p>
             <RunningBanner 
               items={testimonials}
-              className="bg-purple/20 text-purple-dark rounded-lg py-2 mt-8"
+              className="bg-purple/20 text-purple-900 rounded-lg py-2 mt-8"
               speed={21}
             />
           </div>
@@ -51,12 +51,12 @@ const JoinCommunity = () => {
         <section className="py-16 px-8 bg-white">
           <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-purple-dark">Why Join Our Community?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-purple-900">Why Join Our Community?</h2>
               
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-messages text-purple text-2xl"></i>
+                    <i className="ti ti-messages text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Peer Support</h3>
@@ -66,7 +66,7 @@ const JoinCommunity = () => {
                 
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-book text-purple text-2xl"></i>
+                    <i className="ti ti-book text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Educational Resources</h3>
@@ -76,7 +76,7 @@ const JoinCommunity = () => {
                 
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-calendar-event text-purple text-2xl"></i>
+                    <i className="ti ti-calendar-event text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Virtual Events</h3>
@@ -86,7 +86,7 @@ const JoinCommunity = () => {
                 
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-discount text-purple text-2xl"></i>
+                    <i className="ti ti-discount text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Member Benefits</h3>
@@ -97,7 +97,7 @@ const JoinCommunity = () => {
             </div>
             
             <div className="bg-purple/5 p-8 rounded-lg shadow-sm border border-purple/10">
-              <h2 className="text-2xl font-bold mb-6 text-purple-dark">Become a Member</h2>
+              <h2 className="text-2xl font-bold mb-6 text-purple-900">Become a Member</h2>
               <p className="text-gray-600 mb-6">
                 Fill out this form to join our community. Membership is free and gives you access to all our resources.
               </p>
@@ -170,35 +170,35 @@ const JoinCommunity = () => {
         
         <section className="py-16 px-8 bg-gray-50">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 text-purple-dark">Upcoming Community Events</h2>
+            <h2 className="text-3xl font-bold mb-6 text-purple-900">Upcoming Community Events</h2>
             <p className="text-lg mb-12 text-gray-600">
               Join these virtual and in-person events to connect with other caregivers
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-purple/5">
-                <div className="text-purple font-bold mb-2">June 15, 2025</div>
+                <div className="text-purple-900 font-bold mb-2">June 15, 2025</div>
                 <h3 className="text-xl font-semibold mb-3">Virtual Support Group</h3>
                 <p className="text-gray-600 mb-4">Share experiences and strategies for managing caregiver stress</p>
-                <Button variant="outline" className="border-purple text-purple hover:bg-purple hover:text-white">
+                <Button variant="outline" className="border-purple text-purple-900 hover:bg-purple hover:text-white">
                   Register
                 </Button>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-purple/5">
-                <div className="text-purple font-bold mb-2">June 22, 2025</div>
+                <div className="text-purple-900 font-bold mb-2">June 22, 2025</div>
                 <h3 className="text-xl font-semibold mb-3">Caregiving Workshop</h3>
                 <p className="text-gray-600 mb-4">Learn practical skills for daily caregiving challenges</p>
-                <Button variant="outline" className="border-purple text-purple hover:bg-purple hover:text-white">
+                <Button variant="outline" className="border-purple text-purple-900 hover:bg-purple hover:text-white">
                   Register
                 </Button>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-sm border border-purple/5">
-                <div className="text-purple font-bold mb-2">July 5, 2025</div>
+                <div className="text-purple-900 font-bold mb-2">July 5, 2025</div>
                 <h3 className="text-xl font-semibold mb-3">Self-Care Session</h3>
                 <p className="text-gray-600 mb-4">Focus on wellness practices for caregivers</p>
-                <Button variant="outline" className="border-purple text-purple hover:bg-purple hover:text-white">
+                <Button variant="outline" className="border-purple text-purple-900 hover:bg-purple hover:text-white">
                   Register
                 </Button>
               </div>

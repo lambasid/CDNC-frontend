@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Layout/Header";
 import { Footer } from "@/components/Layout/Footer";
 import { RunningBanner } from "@/components/Support/RunningBanner";
@@ -44,16 +43,16 @@ const SendLetter = () => {
     <>
       <Header />
       
-      <main className="pt-20">
-        <section className="bg-purple-light text-purple-dark py-16 px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-6">Make Your Voice Heard</h1>
-            <p className="text-xl mb-8">
+      <main className="pt-16">
+        <section className="bg-purple-light/30 py-16 px-8">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Make Your Voice Heard</h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8">
               Send a letter to your representative advocating for better support and recognition for caregivers.
             </p>
             <RunningBanner 
               items={successMessages}
-              className="bg-purple/20 text-purple-dark rounded-lg py-2 mt-8"
+              className="bg-purple/20 text-purple-900 rounded-lg py-2 mt-8"
               speed={15}
             />
           </div>
@@ -62,12 +61,12 @@ const SendLetter = () => {
         <section className="py-16 px-8 bg-white">
           <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-purple-dark">Why Your Letter Matters</h2>
+              <h2 className="text-3xl font-bold mb-6 text-purple-900">Why Your Letter Matters</h2>
               
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-chart-bar text-purple text-2xl"></i>
+                    <i className="ti ti-chart-bar text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">2.6 Million Caregivers</h3>
@@ -77,7 +76,7 @@ const SendLetter = () => {
                 
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-clock text-purple text-2xl"></i>
+                    <i className="ti ti-clock text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">26+ Hours Weekly</h3>
@@ -87,7 +86,7 @@ const SendLetter = () => {
                 
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-wallet text-purple text-2xl"></i>
+                    <i className="ti ti-wallet text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Financial Impact</h3>
@@ -97,7 +96,7 @@ const SendLetter = () => {
                 
                 <div className="flex gap-4">
                   <div className="bg-purple/10 p-3 rounded-lg h-fit">
-                    <i className="ti ti-heart text-purple text-2xl"></i>
+                    <i className="ti ti-heart text-purple-900 text-2xl"></i>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Health Concerns</h3>
@@ -107,7 +106,7 @@ const SendLetter = () => {
               </div>
               
               <div className="mt-8 p-6 bg-purple/5 rounded-lg border border-purple/10">
-                <h3 className="text-xl font-semibold mb-4 text-purple-dark">Current Policy Issues</h3>
+                <h3 className="text-xl font-semibold mb-4 text-purple-900">Current Policy Issues</h3>
                 <ul className="list-disc pl-5 space-y-2 text-gray-600">
                   <li>Paid family leave for caregivers</li>
                   <li>Tax credits for caregiving expenses</li>
@@ -119,7 +118,7 @@ const SendLetter = () => {
             </div>
             
             <div className="bg-purple/5 p-8 rounded-lg shadow-sm border border-purple/10">
-              <h2 className="text-2xl font-bold mb-6 text-purple-dark">Send Your Letter</h2>
+              <h2 className="text-2xl font-bold mb-6 text-purple-900">Send Your Letter</h2>
               <p className="text-gray-600 mb-6">
                 Customize your message or use our template to send a letter to your representative.
               </p>
@@ -202,7 +201,7 @@ const SendLetter = () => {
                 </div>
                 
                 <div className="bg-white p-4 rounded-md border border-purple/20 mt-4">
-                  <h4 className="font-medium text-purple-dark mb-2">Our Letter Template</h4>
+                  <h4 className="font-medium text-purple-900 mb-2">Our Letter Template</h4>
                   <p className="text-sm text-gray-600">
                     Dear [Representative Name],<br /><br />
                     I'm writing to urge you to support policies that help unpaid family caregivers. Caregivers provide essential services that save our healthcare system billions annually, often at great personal cost.<br /><br />

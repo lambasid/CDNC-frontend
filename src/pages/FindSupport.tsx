@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/Layout/Header";
 import { Footer } from "@/components/Layout/Footer";
 import { RunningBanner } from "@/components/Support/RunningBanner";
@@ -10,37 +9,37 @@ const FindSupport = () => {
     {
       title: "Crisis Hotline",
       description: "24/7 support for caregivers in crisis situations",
-      icon: <Phone className="h-8 w-8 text-purple" />,
+      icon: <Phone className="h-8 w-8 text-purple-900" />,
       contactInfo: "1-800-555-HELP",
     },
     {
       title: "Counseling Services",
       description: "Professional counseling for emotional support",
-      icon: <Heart className="h-8 w-8 text-purple" />,
+      icon: <Heart className="h-8 w-8 text-purple-900" />,
       contactInfo: "counseling@caresupport.org",
     },
     {
       title: "Local Support Groups",
       description: "Connect with other caregivers in your area",
-      icon: <MapPin className="h-8 w-8 text-purple" />,
+      icon: <MapPin className="h-8 w-8 text-purple-900" />,
       contactInfo: "Find your local group",
     },
     {
       title: "Financial Assistance",
       description: "Resources for financial support and planning",
-      icon: <LifeBuoy className="h-8 w-8 text-purple" />,
+      icon: <LifeBuoy className="h-8 w-8 text-purple-900" />,
       contactInfo: "finance@caresupport.org",
     },
     {
       title: "Online Resources",
       description: "Educational materials and guides",
-      icon: <HelpCircle className="h-8 w-8 text-purple" />,
+      icon: <HelpCircle className="h-8 w-8 text-purple-900" />,
       contactInfo: "resources.caresupport.org",
     },
     {
       title: "Email Support",
       description: "Send us your questions and concerns",
-      icon: <Mail className="h-8 w-8 text-purple" />,
+      icon: <Mail className="h-8 w-8 text-purple-900" />,
       contactInfo: "help@caresupport.org",
     },
   ];
@@ -62,13 +61,13 @@ const FindSupport = () => {
       
       <main className="pt-16">
         {/* Hero Banner */}
-        <section className="bg-purple-light text-purple-dark py-20 px-6">
+        <section className="bg-purple-light/30 py-16 px-8">
           <div className="max-w-screen-xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Find Support</h1>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Find Support</h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8">
               We're here to help you navigate your caregiving journey with the support and resources you need.
             </p>
-            <Button className="bg-white text-purple hover:bg-gray-50 border border-purple/20 font-semibold py-3 px-8 rounded-lg">
+            <Button className="bg-white text-purple-900 hover:bg-gray-50 border border-purple/20 font-semibold py-3 px-8 rounded-lg">
               Get Immediate Help
             </Button>
           </div>
@@ -77,21 +76,21 @@ const FindSupport = () => {
         {/* Running Banner */}
         <RunningBanner 
           items={runningBannerItems} 
-          className="bg-purple/10 text-purple-dark font-semibold py-3 text-lg"
+          className="bg-purple/10 text-purple-900 font-semibold py-3 text-lg"
         />
 
         {/* Support Services */}
         <section className="py-16 px-6 bg-gray-50">
           <div className="max-w-screen-xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-purple-dark">Support Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-purple-900">Support Services</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {supportServices.map((service, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-purple/5">
                   <div className="mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2 text-purple-dark">{service.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-purple-900">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <div className="text-purple font-medium">{service.contactInfo}</div>
+                  <div className="text-purple-900 font-medium">{service.contactInfo}</div>
                 </div>
               ))}
             </div>
@@ -102,7 +101,7 @@ const FindSupport = () => {
         <section className="py-16 px-6 bg-white">
           <div className="max-w-screen-xl mx-auto">
             <div className="bg-purple/5 p-8 rounded-lg shadow-sm max-w-2xl mx-auto border border-purple/10">
-              <h2 className="text-2xl font-bold mb-6 text-purple-dark text-center">Request Support</h2>
+              <h2 className="text-2xl font-bold mb-6 text-purple-900 text-center">Request Support</h2>
               <p className="text-gray-600 mb-8 text-center">
                 Fill out this form and our support team will contact you within 24 hours.
               </p>
@@ -182,7 +181,7 @@ const FindSupport = () => {
             "Sign Up For Weekly Support Tips",
             "Connect With A Caregiver Mentor",
           ]} 
-          className="bg-purple-light text-purple-dark font-semibold py-3 text-lg"
+          className="bg-purple-light text-purple-900 font-semibold py-3 text-lg"
           speed={15}
         />
       </main>
