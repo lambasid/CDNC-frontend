@@ -1,3 +1,4 @@
+import { PageLayout } from "../components/Layout/PageLayout";
 import { HeroSlideshow } from "../components/Home/HeroSlideshow";
 import { RunningBanner } from "../components/Home/RunningBanner";
 import { AdvocacySection } from "../components/Home/AdvocacySection";
@@ -14,15 +15,17 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      <HeroSlideshow />
-      <div className="bg-purple-50 py-4">
-        <RunningBanner items={bannerItems} speed={5} />
+    <PageLayout>
+      <div className="min-h-screen">
+        <HeroSlideshow />
+        <div className="bg-purple-50 py-4">
+          <RunningBanner items={bannerItems} speed={5} />
+        </div>
+        <AdvocacySection />
+        <CommunitySection />
+        <ResourcesSection />
       </div>
-      <AdvocacySection />
-      <CommunitySection />
-      <ResourcesSection />
-    </div>
+    </PageLayout>
   );
 };
 

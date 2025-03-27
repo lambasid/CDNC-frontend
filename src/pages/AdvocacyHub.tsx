@@ -19,13 +19,13 @@ const AdvocacyHub = () => {
               Together, we can make a difference.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild className="bg-purple hover:bg-purple-dark">
+              <Button asChild className="bg-purple hover:bg-purple-dark font-bold">
                 <Link to="/find-mp">
                   <Vote className="mr-2" />
                   Find Your MP
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="border-purple text-purple-900 hover:bg-purple-light">
+              <Button asChild variant="outline" className="border-purple text-purple-900 hover:bg-purple-dark font-bold">
                 <Link to="/send-letter">
                   <Mail className="mr-2" />
                   Send Advocacy Letter

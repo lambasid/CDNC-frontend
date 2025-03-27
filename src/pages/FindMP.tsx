@@ -1,6 +1,6 @@
 import { Header } from "@/components/Layout/Header";
 import { Footer } from "@/components/Layout/Footer";
-import { RunningBanner } from "@/components/Support/RunningBanner";
+import { RunningBanner } from "@/components/Home/RunningBanner";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
@@ -53,9 +53,9 @@ const FindMP = () => {
   ];
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="pt-16">
+      <main className="flex-grow pt-16">
         <section className="bg-purple-light/30 py-16 px-8">
           <div className="max-w-screen-xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-purple-900">Find Your MP</h1>
@@ -73,7 +73,7 @@ const FindMP = () => {
                   className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple"
                   required
                 />
-                <Button type="submit" className="bg-purple hover:bg-purple-dark text-white">
+                <Button type="submit" className="btn btn-secondary">
                   Search
                 </Button>
               </div>
@@ -129,7 +129,7 @@ const FindMP = () => {
         )}
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

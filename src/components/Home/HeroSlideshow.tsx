@@ -34,8 +34,23 @@ export const HeroSlideshow = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "ArrowLeft") {
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    } else if (e.key === "ArrowRight") {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }
+  };
+
   return (
-    <div className="relative h-[600px] overflow-hidden">
+    <div 
+      className="relative h-[600px] overflow-hidden"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Featured content slideshow"
+      onKeyDown={handleKeyDown}
+      tabIndex={0}
+    >
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -44,10 +59,15 @@ export const HeroSlideshow = () => {
               ? "opacity-100 scale-100" 
               : "opacity-0 scale-105"
           }`}
+          role="group"
+          aria-roledescription="slide"
+          aria-label={`${index + 1} of ${slides.length}`}
+          aria-hidden={index !== currentSlide}
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
+            aria-hidden="true"
           >
             <div className={`absolute inset-0 ${slide.overlay}`} />
           </div>
@@ -61,30 +81,37 @@ export const HeroSlideshow = () => {
             <div className="flex gap-4 flex-wrap justify-center animate-fade-in-up">
               <Link
                 to="/join-community"
-                className="bg-white text-purple-900 text-base font-semibold flex items-center gap-2 justify-center cursor-pointer px-8 py-4 rounded-lg border border-purple/20 hover:bg-gray-50 transition-all hover:scale-105 hover:shadow-lg"
+                className="bg-white text-purple-900 text-base font-semibold flex items-center gap-2 justify-center cursor-pointer px-8 py-4 rounded-lg border border-purple/20 hover:bg-gray-50 transition-all hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+                aria-label="Join our community"
               >
-                <TiUser className="text-xl" />
+                <TiUser className="text-xl" aria-hidden="true" />
                 <span>Join Community</span>
               </Link>
               <Link
                 to="/send-letter"
-                className="bg-white text-purple-900 text-base font-semibold flex items-center gap-2 justify-center cursor-pointer px-8 py-4 rounded-lg border border-purple/20 hover:bg-gray-50 transition-all hover:scale-105 hover:shadow-lg"
+                className="bg-white text-purple-900 text-base font-semibold flex items-center gap-2 justify-center cursor-pointer px-8 py-4 rounded-lg border border-purple/20 hover:bg-gray-50 transition-all hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+                aria-label="Send an advocacy letter"
               >
-                <TiMail className="text-xl" />
+                <TiMail className="text-xl" aria-hidden="true" />
                 <span>Send Advocacy Letter</span>
               </Link>
               <Link
                 to="/find-support"
-                className="bg-white text-purple-900 text-base font-semibold flex items-center justify-center gap-2 cursor-pointer px-8 py-4 rounded-lg border border-purple/20 hover:bg-gray-50 transition-all hover:scale-105 hover:shadow-lg"
+                className="bg-white text-purple-900 text-base font-semibold flex items-center justify-center gap-2 cursor-pointer px-8 py-4 rounded-lg border border-purple/20 hover:bg-gray-50 transition-all hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+                aria-label="Find support resources"
               >
-                <TiHeart className="text-xl" />
+                <TiHeart className="text-xl" aria-hidden="true" />
                 <span>Find Support</span>
               </Link>
             </div>
           </div>
         </div>
       ))}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+      <div 
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2"
+        role="tablist"
+        aria-label="Slideshow navigation"
+      >
         {slides.map((_, index) => (
           <button
             key={index}
@@ -92,8 +119,10 @@ export const HeroSlideshow = () => {
               index === currentSlide 
                 ? "bg-white scale-125" 
                 : "bg-white/50 hover:bg-white/75"
-            }`}
+            } focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-900`}
             onClick={() => setCurrentSlide(index)}
+            role="tab"
+            aria-selected={index === currentSlide}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
