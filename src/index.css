@@ -154,9 +154,8 @@
   }
 
   .btn-primary {
-    @apply bg-primary-main text-primary-contrast hover:bg-primary-dark shadow-md hover:shadow-lg;
+    @apply bg-primary-main text-primary-contrast hover:bg-primary-light hover:text-white;
   }
-
   .btn-secondary {
     @apply bg-secondary-main text-secondary-contrast hover:bg-secondary-dark shadow-md hover:shadow-lg;
   }

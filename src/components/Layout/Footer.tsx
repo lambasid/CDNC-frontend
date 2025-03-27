@@ -23,7 +23,7 @@ export const Footer = () => {
             className="col-span-1 md:col-span-2 lg:col-span-1"
           >
             <h3 className="text-xl font-bold mb-4">Caregiver Support Network</h3>
-            <p className="mb-4 text-sm opacity-80">
+            <p className="mb-4 text-sm opacity-80 text-white">
               Supporting caregivers with community, resources, and advocacy.
             </p>
             <div className="flex gap-4">
@@ -120,11 +120,11 @@ export const Footer = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4 ">Contact Us</h3>
             <address className="not-italic">
-              <p className="mb-2">123 Support Street</p>
-              <p className="mb-2">Care City, CA 90000</p>
-              <p className="mb-2">
+              <p className="mb-2 text-white">123 Support Street</p>
+              <p className="mb-2 text-white">Care City, CA 90000</p>
+              <p className="mb-2 text-white">
                 <a href="mailto:info@caregivernetwork.org" className="text-white hover:text-accent-main transition-colors">
                   info@caregivernetwork.org
                 </a>
@@ -139,7 +139,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-white border-opacity-20 py-6 px-4 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm opacity-80">
+          <p className="text-sm opacity-80 text-white">
             &copy; {currentYear} Caregiver Support Network. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex gap-4 text-sm">

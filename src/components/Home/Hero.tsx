@@ -34,12 +34,9 @@ export const Hero = () => {
   }, []);
 
   const runningBannerItems = [
-    "24/7 Crisis Support Available",
     "Join a Local Support Group Today",
     "Financial Resources for Caregivers",
     "Download Our Free Caregiving Guide",
-    "Virtual Support Sessions Every Tuesday",
-    "One-on-One Counseling Available",
     "Emergency Respite Care Services",
     "Caregiver Wellness Workshops",
   ];
@@ -82,7 +79,7 @@ export const Hero = () => {
             className="mb-8 mx-auto w-24 h-24 bg-white rounded-full shadow-xl flex items-center justify-center"
           >
             <img 
-              src="https://cdn-icons-png.flaticon.com/512/3004/3004613.png" 
+              src="/images/logo_heart.png"
               alt="Caregiving Icon" 
               className="w-14 h-14" 
             />
@@ -120,14 +117,14 @@ export const Hero = () => {
             </Link>
             <Link
               to="/send-letter"
-              className="btn btn-secondary flex items-center justify-center gap-2"
+              className="btn btn-primary flex items-center justify-center gap-2"
             >
               <TiMail className="text-xl" />
               <span>Send Letter</span>
             </Link>
             <Link
               to="/find-support"
-              className="btn btn-accent flex items-center justify-center gap-2"
+              className="btn btn-primary flex items-center justify-center gap-2"
             >
               <TiHeart className="text-xl" />
               <span>Find Support</span>
@@ -142,7 +139,7 @@ export const Hero = () => {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                currentSlide === index ? 'bg-primary-main w-6' : 'bg-primary-light'
+                currentSlide === index ? 'bg-white w-6' : 'bg-primary-light'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
@@ -153,7 +150,7 @@ export const Hero = () => {
       <section>
         <RunningBanner
           items={runningBannerItems}
-          className="bg-primary-light text-primary-main font-semibold py-3 text-lg"
+          className="bg-primary-light text-white font-semibold py-3 text-lg"
         />
       </section>
     </main>

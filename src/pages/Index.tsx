@@ -26,7 +26,6 @@ const Index = () => {
         <Hero />
         <ResourcesSection />
         <AdvocacySection />
-        <CommunitySection />
       </motion.main>
 
       {/* <ChatButton /> */}
