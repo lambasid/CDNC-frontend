@@ -13,6 +13,7 @@ import FindMP from "./pages/FindMP";
 import AdvocacyHub from "./pages/AdvocacyHub";
 import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
+import SignUp from "./pages/SignUp";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/join-community" element={<JoinCommunity />} />
           <Route path="/send-letter" element={<SendLetter />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
           <Route path="/find-mp" element={<FindMP />} />
           <Route path="/advocacy" element={<AdvocacyHub />} />
           <Route path="/resources" element={<Resources />} />

@@ -109,7 +109,7 @@ const SignIn = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/login', {email, password})
+    axios.post('https://cdnc-backend.onrender.com/login', {email, password})
     .then(result => {console.log(result)
       if(result.data === "Success") {
         toast({
@@ -193,7 +193,7 @@ const SignIn = () => {
 
               <p className="text-center text-sm text-gray-600 mt-4">
                 Don't have an account?{" "}
-                <a href="sign-up" className="text-purple hover:text-purple-dark font-medium">
+                <a href="/sign-up" className="text-purple hover:text-purple-dark font-medium">
                   Create one now
                 </a>
               </p>

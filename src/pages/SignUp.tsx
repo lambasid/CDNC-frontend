@@ -30,7 +30,7 @@ const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    axios.post("http://localhost:3001/register", formData)
+    axios.post("https://cdnc-backend.onrender.com/register", formData)
         .then((result) => {
             console.log("Success:", result);
             toast({
