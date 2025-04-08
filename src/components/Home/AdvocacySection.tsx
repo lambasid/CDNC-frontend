@@ -26,7 +26,7 @@ export const AdvocacySection = () => {
         </div>
         <div>
           <img
-            src="advocacySection.png"
+            src="../advocacySection.png"
             alt="Advocacy illustration"
             className="w-[600px] h-[400px] shadow-[0_4px_6px_rgba(0,0,0,0.05),0_10px_15px_rgba(0,0,0,0.05)] rounded-lg max-md:w-full max-md:h-auto"
           />
