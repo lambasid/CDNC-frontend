@@ -186,7 +186,7 @@ const SignIn = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-purple hover:bg-purple-dark text-white"
+                className="w-full text-black"
               >
                 Sign In
               </Button>
