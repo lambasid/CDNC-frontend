@@ -140,6 +140,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import axios from "axios";
+import { Search, ExternalLink } from "lucide-react";
 
 const FindMP = () => {
   const [province, setProvince] = useState("");
@@ -150,7 +151,7 @@ const FindMP = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.get(`http://localhost:3001/mps?province=${province}`);
+      const response = await axios.get(`https://cdnc-backend.onrender.com/mps?province=${province}`);
       setMpList(response.data);
       setSearchPerformed(true);
       toast({
@@ -184,19 +185,30 @@ const FindMP = () => {
               Connect with your local Member of Parliament to advocate for caregiver support
             </p>
 
-            <form onSubmit={handleSearch} className="max-w-md mx-auto">
+            <form onSubmit={handleSearch} className="max-w-md mx-auto space-y-4">
               <div className="flex gap-4">
                 <input
                   type="text"
                   value={province}
                   onChange={(e) => setProvince(e.target.value)}
-                  placeholder="Enter your province (e.g., Alberta)"
+                  placeholder="Enter your province"
                   className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple"
                   required
                 />
-                <Button type="submit" className="bg-purple hover:bg-purple-dark text-white">
-                  Search
+              </div>
+              <div className="flex flex-col md:flex-row gap-4 justify-center">
+                <Button type="submit" className="flex items-center gap-2 border-purple text-purple-900 hover:bg-purple-dark hover:text-purple-700 font-bold px-6 py-2">
+                  <Search size={18} /> Search by Province
                 </Button>
+                <a
+                  href="https://www.ourcommons.ca/members/en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button type="button" className="flex items-center gap-2 border-purple text-purple-900 hover:bg-purple-dark hover:text-purple-700 font-bold px-6 py-2">
+                    <ExternalLink size={18} /> Search by Postal Code
+                  </Button>
+                </a>
               </div>
             </form>
           </div>
@@ -205,7 +217,6 @@ const FindMP = () => {
         <RunningBanner
           items={successStories}
           className="bg-purple/10 text-purple-dark py-3"
-          speed={20}
         />
 
         {searchPerformed && (
@@ -244,5 +255,3 @@ const FindMP = () => {
 };
 
 export default FindMP;
-
-// export default FindMP;
